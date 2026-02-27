@@ -160,11 +160,12 @@ lib/
 
 ## 6. Tampilan Ketika Menahan Lama Salah Satu Riwayat Transaksi
 
-<img width="1919" height="909" alt="Screenshot 2026-02-28 005322" src="https://github.com/user-attachments/assets/4e961531-8e25-42aa-af4c-9df08ddfbd7d" />
+<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/ff978e47-f7fc-4db0-aa5d-280bf7837244" />
 
 ## 7. Tampilan Konfirmasi Apabila Ingin Menghapus Riwayat Transaksi
 
-<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/30b2ec8d-f207-427d-b0fc-2f1c41dd88b5" />
+<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/eb97988f-f8e0-4f37-be17-1d4d7b632772" />
+
 
 
 
