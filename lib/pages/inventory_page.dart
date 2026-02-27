@@ -41,8 +41,10 @@ class _InventoryPageState extends State<InventoryPage> {
     }
   }
 
-  void tambahStokDialog(Game game) {
-    final jumlahController = TextEditingController();
+  /// Edit
+  void editStokDialog(Game game) {
+    final jumlahController =
+        TextEditingController(text: game.stok.toString());
 
     showDialog(
       context: context,
@@ -51,14 +53,14 @@ class _InventoryPageState extends State<InventoryPage> {
           borderRadius: BorderRadius.circular(18),
         ),
         title: Text(
-          "Tambah Stok ${game.nama}",
+          "Edit Stok ${game.nama}",
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         content: TextField(
           controller: jumlahController,
           keyboardType: TextInputType.number,
           decoration: const InputDecoration(
-            labelText: "Jumlah Stok",
+            labelText: "Jumlah Stok Baru",
             border: OutlineInputBorder(),
           ),
         ),
@@ -82,18 +84,43 @@ class _InventoryPageState extends State<InventoryPage> {
               ),
             ),
             onPressed: () {
-              int jumlah = int.tryParse(jumlahController.text) ?? 0;
+              int? jumlahBaru = int.tryParse(jumlahController.text);
 
-              if (jumlah > 0) {
-                setState(() {
-                  game.stok += jumlah;
-                });
+              if (jumlahBaru == null) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text("Stok harus berupa angka!"),
+                    backgroundColor: Colors.red,
+                  ),
+                );
+                return;
               }
 
+              if (jumlahBaru < 0) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text("Stok tidak boleh negatif!"),
+                    backgroundColor: Colors.red,
+                  ),
+                );
+                return;
+              }
+
+              setState(() {
+                game.stok = jumlahBaru;
+              });
+
               Navigator.pop(context);
+
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text("Stok berhasil diperbarui!"),
+                  backgroundColor: Colors.green,
+                ),
+              );
             },
             child: const Text(
-              "Tambah",
+              "Simpan",
               style: TextStyle(
                 fontWeight: FontWeight.w600,
               ),
@@ -134,7 +161,7 @@ class _InventoryPageState extends State<InventoryPage> {
             child: Row(
               children: [
 
-                /// Ini logo gamenya
+                /// LOGO GAME
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
@@ -147,7 +174,7 @@ class _InventoryPageState extends State<InventoryPage> {
 
                 const SizedBox(width: 16),
 
-                /// Ini ngasih kotaknya
+                /// INFO GAME
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +188,7 @@ class _InventoryPageState extends State<InventoryPage> {
                       ),
                       const SizedBox(height: 6),
 
-                      /// Ini Ikon samping Stok
+                      /// ICON + STOK
                       Row(
                         children: [
                           Container(
@@ -191,7 +218,7 @@ class _InventoryPageState extends State<InventoryPage> {
                   ),
                 ),
 
-                /// Ini Button Tambah
+                /// BUTTON
                 MouseRegion(
                   onEnter: (_) {
                     setState(() {
@@ -213,7 +240,7 @@ class _InventoryPageState extends State<InventoryPage> {
                       setState(() {
                         pressedIndex = null;
                       });
-                      tambahStokDialog(game);
+                      editStokDialog(game); 
                     },
                     onTapCancel: () {
                       setState(() {
