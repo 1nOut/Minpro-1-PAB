@@ -48,7 +48,7 @@ lib/
 
 ## 1. Daftar Game
 
-- Menampilkan seluruh game dalam bentuk daftar (ListView)
+- Menampilkan seluruh game dalam bentuk daftar
 
 - Setiap kartu game menampilkan logo, nama game, dan jumlah stok diamond/koin
 
@@ -64,11 +64,11 @@ lib/
 
 - Terdapat notifikasi apakah transaksi berhasil atau gagal
 
-## 3. Manajemen Inventory (Tambah Stok)
+## 3. Manajemen Inventory 
 
 - Menampilkan daftar game beserta stok saat ini
 
-- Tombol "+" tersedia pada setiap game untuk mengedit jumlah stok
+- Tombol "+" tersedia pada setiap game untuk mengedit (UPDATE) jumlah stok
 
 - Dialog input jumlah stok
 
@@ -76,9 +76,11 @@ lib/
 
 ## 4. Riwayat Transaksi
 
-- Menampilkan daftar transaksi yang telah dilakukan
+- Menampilkan daftar transaksi yang telah dilakukan (READ)
 
 - Data transaksi langsung muncul setelah proses top up berhasil
+
+- Dapat interaksi dengan menahan lama pada salah satu riwayat transaksi untuk dihapus (DELETE)
 
 ## 5. Navigasi
 
@@ -155,4 +157,14 @@ lib/
 ## 5. Tampilan Edit Stok di Inventory
 
 <img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/ab963fb4-b87b-41c8-a97a-9bd32fccf7c1" />
+
+## 6. Tampilan Ketika Menahan Lama Salah Satu Riwayat Transaksi
+
+<img width="1919" height="909" alt="Screenshot 2026-02-28 005322" src="https://github.com/user-attachments/assets/4e961531-8e25-42aa-af4c-9df08ddfbd7d" />
+
+## 7. Tampilan Konfirmasi Apabila Ingin Menghapus Riwayat Transaksi
+
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/30b2ec8d-f207-427d-b0fc-2f1c41dd88b5" />
+
+
 
