@@ -46,7 +46,7 @@ lib/
 
 # Fitur Aplikasi
 
-1. Daftar Game
+## 1. Daftar Game
 
 - Menampilkan seluruh game dalam bentuk daftar (ListView)
 
@@ -56,7 +56,7 @@ lib/
 
 - Terdapat animasi hover dan efek tekan pada kartu game
 
-2. Top Up Game
+## 2. Top Up Game
 
 - Halaman form khusus untuk melakukan transaksi top up
 
@@ -66,7 +66,7 @@ lib/
 
 - Notifikasi keberhasilan atau kegagalan menggunakan SnackBar
 
-3. Manajemen Inventory (Tambah Stok)
+## 3. Manajemen Inventory (Tambah Stok)
 
 - Menampilkan daftar game beserta stok saat ini
 
@@ -76,7 +76,7 @@ lib/
 
 Stok langsung diperbarui secara real-time setelah ditambahkan
 
-4. Riwayat Transaksi
+## 4. Riwayat Transaksi
 
 - Menampilkan daftar transaksi yang telah dilakukan
 
@@ -84,7 +84,7 @@ Stok langsung diperbarui secara real-time setelah ditambahkan
 
 - Data transaksi langsung muncul setelah proses top up berhasil
 
-5. Navigasi
+## 5. Navigasi
 
 - Halaman utama menampilkan daftar game (Home Page)
 
