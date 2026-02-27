@@ -12,7 +12,6 @@ Aplikasi ini memungkinkan admin untuk:
 
 - Melihat riwayat transaksi
 
-Aplikasi dibuat menggunakan StatefulWidget untuk manajemen state dan navigasi multi-halaman menggunakan Navigator.push().
 
 # 📱 Deskripsi Aplikasi
 
