@@ -52,19 +52,17 @@ lib/
 
 - Setiap kartu game menampilkan logo, nama game, dan jumlah stok diamond/koin
 
-- Tombol Top Up tersedia langsung pada setiap game
-
-- Terdapat animasi hover dan efek tekan pada kartu game
+- Tombol Top Up tersedia langsung pada setiap game untuk membuat (CREATE) transaksi
 
 ## 2. Top Up Game
 
-- Halaman form khusus untuk melakukan transaksi top up
+- Halaman form khusus untuk menambahkan informasi transaksi top up
 
 - Input field untuk ID Player, jumlah top up, dan email
 
 - Stok otomatis berkurang setelah transaksi berhasil
 
-- Notifikasi keberhasilan atau kegagalan menggunakan SnackBar
+- Terdapat notifikasi apakah transaksi berhasil atau gagal
 
 ## 3. Manajemen Inventory (Tambah Stok)
 
@@ -74,13 +72,11 @@ lib/
 
 - Dialog input jumlah stok
 
-Stok langsung diperbarui secara real-time setelah ditambahkan
+- Stok langsung diperbarui secara real-time setelah ditambahkan
 
 ## 4. Riwayat Transaksi
 
 - Menampilkan daftar transaksi yang telah dilakukan
-
-- Setiap transaksi menampilkan:
 
 - Data transaksi langsung muncul setelah proses top up berhasil
 
